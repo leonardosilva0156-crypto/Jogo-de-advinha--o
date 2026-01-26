@@ -24,17 +24,31 @@ function verificar(){
     
     else { 
         alert("Numero baixo, tente com um maior! ");
+
     }
 
-    
+    let tentativas = 0;
+    do {
+       alert("voce tem"  + tentativas + "tentativas restantes");
+        tentativas++;
+    } while(tentativas < 5);
+
+    if(tentativas == 5){
+        alert("Suas tentativas acabaram, o numero era" + numerogerado);
+    }
+
 }
 
-function resetarjogo(){
-    const tentativas = 1;
+
+
+
+
+
+  
    
     
    
-}
+
 
 
 
