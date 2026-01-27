@@ -27,14 +27,14 @@ function verificar(){
 
     }
 
-    let tentativas = 0;
+    let tentativas = 5;
     do {
        alert("voce tem"  + tentativas + "tentativas restantes");
-        tentativas++;
-    } while(tentativas < 5);
+        tentativas--;
+    } while(tentativas > 0);
 
-    if(tentativas == 5){
-        alert("Suas tentativas acabaram, o numero era" + numerogerado);
+    if(tentativas == 0){
+        alert("Suas tentativas acabaram, o numero era"  + numerogerado);
     }
 
 }
