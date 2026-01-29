@@ -27,17 +27,36 @@ function verificar(){
 
     }
 
-    let tentativas = 5;
-    do {
-       alert("voce tem"  + tentativas + "tentativas restantes");
-        tentativas--;
-    } while(tentativas > 0);
+    vidas();
+    
 
-    if(tentativas == 0){
-        alert("Suas tentativas acabaram, o numero era"  + numerogerado);
+    
+}
+
+function vidas(){
+   let tentativas = 5;
+   while(tentativas > 0){
+    tentativas--;
+    break;
+   }
+ 
+ 
+   
+
+
+    if(tentativas > 0){
+        alert("você ainda tem " + tentativas + "tentativas");
+     }
+      
+     else{
+        alert("Suas tentativas acabaram, o numero era " + numerogerado );
+     }
+    
     }
 
-}
+    
+
+
 
 
 
