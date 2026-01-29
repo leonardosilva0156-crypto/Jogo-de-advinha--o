@@ -37,7 +37,7 @@ function vidas(){
    let tentativas = 5;
    while(tentativas > 0){
     tentativas--;
-    break;
+    
    }
  
  
