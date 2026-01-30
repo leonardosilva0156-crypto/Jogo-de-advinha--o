@@ -27,32 +27,28 @@ function verificar(){
 
     }
 
-    vidas();
+     let tentativas = 5;
+   while(tentativas > 0){
+   tentativas--;
+   
+   if(tentativas > 0){
+        alert("você ainda tem " + tentativas + "tentativas");
+     }
+      
+     else if(tentativas == 0){
+        alert("Suas tentativas acabaram, o numero era " + numerogerado );
+     }
+     else{
+       break; 
+     }
+    }
     
 
     
 }
 
-function vidas(){
-   let tentativas = 5;
-   while(tentativas > 0){
-    tentativas--;
-    
-   }
- 
- 
-   
 
-
-    if(tentativas > 0){
-        alert("você ainda tem " + tentativas + "tentativas");
-     }
-      
-     else{
-        alert("Suas tentativas acabaram, o numero era " + numerogerado );
-     }
     
-    }
 
     
 
