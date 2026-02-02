@@ -16,6 +16,7 @@ function verificar(){
     
     if(palpite == numerogerado){
         alert("Parabéns, voçê acertou");
+        
     }
     
     else if(palpite > numerogerado) {
@@ -27,26 +28,32 @@ function verificar(){
 
     }
 
-     let tentativas = 5;
-   while(tentativas > 0){
-   tentativas--;
-   
-   if(tentativas > 0){
-        alert("você ainda tem " + tentativas + "tentativas");
-     }
-      
-     else if(tentativas == 0){
-        alert("Suas tentativas acabaram, o numero era " + numerogerado );
-     }
-     else{
-       break; 
-     }
-    }
-    
-
+    vidas();
     
 }
 
+function vidas(){
+   let tentativas = 5;
+   while(tentativas > 0){
+    tentativas--;
+
+    if(tentativas > 0){
+    alert("você ainda tem " + tentativas + "tentativas");
+    break;
+   }
+
+   else{
+    alert("Suas tentativas acabaram, o numero era " + numerogerado);
+    reiniciarjogo();
+   }
+  }
+}
+
+function reiniciarjogo(){
+    location.reload();
+}
+
+
 
     
 
@@ -54,7 +61,7 @@ function verificar(){
 
 
 
-
+ 
 
 
 
@@ -66,6 +73,7 @@ function verificar(){
 
 
 
+     
 
 
 
